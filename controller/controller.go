@@ -31,7 +31,7 @@ func CrawDataByVN(code string ) []byte  {
 	req.Header.Set("Sec-Fetch-Mode", "cors")
 	req.Header.Set("Referer", "https://ncov.moh.gov.vn/")
 	req.Header.Set("Accept-Language", "en-VN,en-US;q=0.9,en;q=0.8")
-	req.Header.Set("Cookie", "JSESSIONID=E06B9BCBB1497370A7464F89665570A6; COOKIE_SUPPORT=true; GUEST_LANGUAGE_ID=vi_VN; AWSALB=O+r9ELICA7LmRL3nfV1C6VX60EmTZ4cGhs+9CGVBaEvUQ4rOMeAqPIJkRWKFkN+IUdupvY59s1NLnRO9x+ktBa4JsaY4YvG/yrzqi6GFLOcnaC7+KPqQiDwSJxjH; AWSALBCORS=O+r9ELICA7LmRL3nfV1C6VX60EmTZ4cGhs+9CGVBaEvUQ4rOMeAqPIJkRWKFkN+IUdupvY59s1NLnRO9x+ktBa4JsaY4YvG/yrzqi6GFLOcnaC7+KPqQiDwSJxjH")
+	//req.Header.Set("Cookie", "JSESSIONID=E06B9BCBB1497370A7464F89665570A6; COOKIE_SUPPORT=true; GUEST_LANGUAGE_ID=vi_VN; AWSALB=O+r9ELICA7LmRL3nfV1C6VX60EmTZ4cGhs+9CGVBaEvUQ4rOMeAqPIJkRWKFkN+IUdupvY59s1NLnRO9x+ktBa4JsaY4YvG/yrzqi6GFLOcnaC7+KPqQiDwSJxjH; AWSALBCORS=O+r9ELICA7LmRL3nfV1C6VX60EmTZ4cGhs+9CGVBaEvUQ4rOMeAqPIJkRWKFkN+IUdupvY59s1NLnRO9x+ktBa4JsaY4YvG/yrzqi6GFLOcnaC7+KPqQiDwSJxjH")
 
 	resp, err := http.DefaultClient.Do(req)
 	if err != nil {
@@ -71,7 +71,7 @@ func CrawDataByCountry(code string) []byte  {
 	req.Header.Set("Sec-Fetch-User", "?1")
 	req.Header.Set("Referer", "https://ncov.moh.gov.vn/")
 	req.Header.Set("Accept-Language", "en-VN,en-US;q=0.9,en;q=0.8")
-	req.Header.Set("Cookie", "_ga=GA1.3.1845270104.1581762891; _gid=GA1.3.126797458.1581762891; COOKIE_SUPPORT=true; GUEST_LANGUAGE_ID=vi_VN; JSESSIONID=C4379EF56E8382BCA594DCBC90B605ED; _gat=1; AWSALB=Lwifhtoyv6BEsHy3WSxJLG38wv8WQROK080g2wQHrqnQv1RENYPqfqhKi93f0h5sfUPT6b8VLvPW9lkH1RRAEsN5z05lxnOELSLXFVpd+10Kt7GpM6THC0H0bvmT; AWSALBCORS=Lwifhtoyv6BEsHy3WSxJLG38wv8WQROK080g2wQHrqnQv1RENYPqfqhKi93f0h5sfUPT6b8VLvPW9lkH1RRAEsN5z05lxnOELSLXFVpd+10Kt7GpM6THC0H0bvmT; LFR_SESSION_STATE_20159=1581834382544")
+	//req.Header.Set("Cookie", "_ga=GA1.3.1845270104.1581762891; _gid=GA1.3.126797458.1581762891; COOKIE_SUPPORT=true; GUEST_LANGUAGE_ID=vi_VN; JSESSIONID=C4379EF56E8382BCA594DCBC90B605ED; _gat=1; AWSALB=Lwifhtoyv6BEsHy3WSxJLG38wv8WQROK080g2wQHrqnQv1RENYPqfqhKi93f0h5sfUPT6b8VLvPW9lkH1RRAEsN5z05lxnOELSLXFVpd+10Kt7GpM6THC0H0bvmT; AWSALBCORS=Lwifhtoyv6BEsHy3WSxJLG38wv8WQROK080g2wQHrqnQv1RENYPqfqhKi93f0h5sfUPT6b8VLvPW9lkH1RRAEsN5z05lxnOELSLXFVpd+10Kt7GpM6THC0H0bvmT; LFR_SESSION_STATE_20159=1581834382544")
 	req.Header.Set("Origin", "https://ncov.moh.gov.vn")
 	req.Header.Set("X-Requested-With", "XMLHttpRequest")
 	req.Header.Set("Content-Type", "application/x-www-form-urlencoded; charset=UTF-8")
